@@ -82,6 +82,14 @@
 
     </properties>
 
+    <distributionManagement>
+             <repository>
+                  <id>maven-releases</id>
+                  <name>maven-releases</name>
+                  <url>http://192.168.180.169:8084/repository/maven-releases/</url>    
+             </repositroy>
+    </distributionManagement>
+         
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -551,6 +559,12 @@
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+        <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://192.168.180.169:8084/repository/maven-releases/</url>
+        </repository>
+             
     </repositories>
 
 </project>
